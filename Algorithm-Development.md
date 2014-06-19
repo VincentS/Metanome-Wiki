@@ -1,0 +1,1 @@
+Metanome supplies a framework to develop data profiling algorithms that integrate into the Metanome tool. Algorthms are packaged in jars that contain a bootstrap class that implements one or several of the specific algorithm interfaces.
