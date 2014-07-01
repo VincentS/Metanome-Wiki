@@ -6,12 +6,12 @@ To add an existing algorithm project to the repository of metanome algorithms th
 1. in all of your poms set the parent pom to root pom like the following
 
     ```
-<parent>
-    <groupId>de.uni-potsdam.hpi.metanome</groupId>
-    <artifactId>algorithms</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
-    <relativePath>../../pom.xml</relativePath>
-</parent>
+    <parent>
+      <groupId>de.uni-potsdam.hpi.metanome</groupId>
+      <artifactId>algorithms</artifactId>
+      <version>0.0.2-SNAPSHOT</version>
+      <relativePath>../../pom.xml</relativePath>
+    </parent>
     ```
 
 1. remove the version tag from your modules the same version as in the root pom is used
