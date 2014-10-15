@@ -15,7 +15,7 @@ set<value_name>ConfigurationValue(String identifier, <value_type>... values) thr
 ### backend.configuration
 
 4. Implement a configuration value <br>
-Implements the interface ConfiguratoinValue
+Implements the interface ConfigurationValue
 
 5. Add your configuration value to the ConfigurationValueFactory
 
