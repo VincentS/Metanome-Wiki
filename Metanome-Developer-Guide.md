@@ -20,6 +20,8 @@ Hint: It has been shown that separating the profiling algorithm from the interfa
 
 Finally, you can use maven to compile your algorithm into a Metanome conform jar. This jar file can then be registered in a running Metanome instance.
 
+![Interface of the BINDER Inclusion Dependency algorithm](https://hpi.de/fileadmin/hpi/FG_Naumann/projekte/repeatability/DataProfiling/Metanome/interface.png)
+
 ### The Metanome algorithm interface
 The _algorithm_integration_ project offers a set of interfaces for different purposes. First, your algorithm should implement one (or more) task interfaces e.g. _UniqueColumnCombinationsAlgorithm_,  _InclusionDependencyAlgorithm_ or _FunctionalDependencyAlgorithm_. This automatically defines the kind of output that Metanome expects from your algorithm. 
 
@@ -29,7 +31,7 @@ Finally, the algorithm can specify parameter types e.g. _IntegerParameterAlgorit
 
 When implementing the configuration specification interfaces note that Metanome will set only those parameters that have been requested by the algorthm before!
 
-![Interface of the BINDER Inclusion Dependency algorithm](https://hpi.de/fileadmin/hpi/FG_Naumann/projekte/repeatability/DataProfiling/Metanome/interface.png)
+![](https://github.com/HPI-Information-Systems/Metanome/wiki/algorithm_types.png)
 
 ### Building a TestRunner
 The algorithm that you build can run within Metanome but you cannot start it in your IDE. So you need to compile and package the algorithm and put it into a running Metanome instance in order to test it. That is nice for shipping your algorithm but impracticable for development. For this reason, we propose to write a TestRunner project that mocks the functionality of Metanome and lets you execute and debug your algorithm in your IDE.
