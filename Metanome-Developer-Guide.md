@@ -29,6 +29,8 @@ Finally, the algorithm can specify parameter types e.g. _IntegerParameterAlgorit
 
 When implementing the configuration specification interfaces note that Metanome will set only those parameters that have been requested by the algorthm before!
 
+![Interface of the BINDER Inclusion Dependency algorithm](https://hpi.de/fileadmin/hpi/FG_Naumann/projekte/repeatability/DataProfiling/Metanome/interface.png)
+
 ### Building a TestRunner
 The algorithm that you build can run within Metanome but you cannot start it in your IDE. So you need to compile and package the algorithm and put it into a running Metanome instance in order to test it. That is nice for shipping your algorithm but impracticable for development. For this reason, we propose to write a TestRunner project that mocks the functionality of Metanome and lets you execute and debug your algorithm in your IDE.
 
