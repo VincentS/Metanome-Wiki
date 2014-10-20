@@ -12,9 +12,9 @@ As a web application, Metanome consists of two major projects: The _backend_ pro
 * **testing_algorithms**: This project contains (dummy) profiling algorithms used by Metanome's automated test cases. The purpose of these algorithms is to check the functionality of the Metanome algorithm interfaces. But a developer can also inspect these algorithms to get an idea of how to implement the Metanome interfaces. 
 
 ### Starting a new profiling algorithm
-The easiest way to start a new profiling algorithm is to copy the template project _algorithm_template_ from the _algorithm_template_root_ project of the Metanome GitHub repository. For convenience, import the copied project into your development IDE of choise (e.g. Eclipse or IntelliJ) as Maven project. Then, change the name of the algorithm from _algorithm_template_ to the name of your algorithm and change the package name. These changes also require to change the according names in the pom.xml file of your project.
+The easiest way to start a new profiling algorithm is to copy the template project _algorithm_template_ from the _algorithm_template_root_ project of the Metanome GitHub repository into your private workspace on your local maschine. Then, import the copied project into your development IDE of choise (e.g. Eclipse or IntelliJ) as Maven project. Afterwards, change the name of the algorithm from _algorithm_template_ to the name of your algorithm and change the package name. These changes also require you to change the according names in the pom.xml file of your project.
 
-Having configured your project, check the Metanome interfaces and change them according to the type of profiling algorithm that you want to implement. An overview over the provided interfaces is given below. 
+Having configured your project, change the implemented Metanome interfaces in the code files according to the type of profiling algorithm that you want to implement. An overview over the provided interfaces is given below. 
 
 Hint: It has been shown that separating the profiling algorithm from the interface implementation is a good pattern. So you could have one class _MyAlgorithm_ that is the implementation of your new profiling algorithm and one class e.g. _MyAlgorithmConfigurator_ that implements the Metanome algorithm interface and configures your algorithm. Thereby, _MyAlgorithmConfigurator_ can ether subclass _MyAlgorithm_ or wrapper _MyAlgorithm_ to set the configuration parameters given by Metanome on the actual algorithm. Note that _MyAlgorithmConfigurator_ must then be the bootstrap class defined in the pom.xml.
 
@@ -30,5 +30,7 @@ Finally, the algorithm can specify parameter types e.g. _IntegerParameterAlgorit
 When implementing the configuration specification interfaces note that Metanome will set only those parameters that have been requested by the algorthm before!
 
 ### Building a TestRunner
+The algorithm that you build can run within Metanome but you cannot simply start in your IDE. So you need to compile and package the algorithm and put it into a running Metanome instance in order to test it. That is nice for shipping your algorithm but impracticable for development. For this reason, we propose to write a TestRunner project that mocks the functionality of Metanome.
+
 
 
