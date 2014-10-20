@@ -21,7 +21,13 @@ Hint: It has been shown that separating the profiling algorithm from the interfa
 Finally, you can use maven to compile your algorithm into a Metanome conform jar. This jar file can then be registered in a running Metanome instance.
 
 ### The Metanome algorithm interface
+The _algorithm_integration_ project offers a set of interfaces for different purposes. First, your algorithm should implement one (or more) task interfaces e.g. _UniqueColumnCombinationsAlgorithm_,  _InclusionDependencyAlgorithm_ or _FunctionalDependencyAlgorithm_. This automatically defines the kind of output that Metanome expects from your algorithm. 
 
+The algorithm must furthermore define the kind of input data that it can process. For instance, _FileInputParameterAlgorithm_ says that (csv) files can be processed and _DatabaseConnectionParameterAlgorithm_ says that a database connection can be used as data source. Note that an algorithm can only use one of these interfaces. It both files and databases can be used as input, then _RelationalParameterAlgorithm_ is the interface to go with.
+
+Finally, the algorithm can specify parameter types e.g. _IntegerParameterAlgorithm_, _BooleanParameterAlgorithm_ or _StringParameterAlgorithm_. This allows the algorithm to query parameters of the respective type from Metanome. 
+
+When implementing the configuration specification interfaces note that Metanome will set only those parameters that have been requested by the algorthm before!
 
 ### Building a TestRunner
 
