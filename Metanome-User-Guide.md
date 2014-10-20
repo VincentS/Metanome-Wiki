@@ -1,9 +1,9 @@
-### Download
+### Download Metanome
 You can download a Metanome build at the [download page](https://www.hpi.uni-potsdam.de/naumann/sites/metanome/files/) . The _deployment\<version\>.zip_ file contains all Metanome binaries and a Jetty web server. Extract it to a location of choice. 
 
 Please note that if you started Metanome once, you should not copy or rename the _deployment\<version\>_ folder afterwards. Otherwise, you would loose all your data within Metanome, because due to the use of relative pathes the data is then not correctly referenced any more!
 
-### Start
+### Start Metanome
 To start Metanome, extract the _deployment<version>.zip_ and run either _deployment<version>\run.bat_ if you are using Windows or _deployment\<version\>\run.sh_ if you are using Linux. Both scripts start a Jetty web server and automatically deploy Metanome. A console will show you the status of the deployment. When the console outputs "Started SelectChannelConnector@0.0.0.0:8080", your Metanome instance is running and ready to be used. 
 
 Now start a web browser like Firefox, enter "localhost:8080" in the address bar and hit enter. The browser then connects to your Metanome instance and you can start profiling.
@@ -12,7 +12,7 @@ When you first start Metanome, there are several example datasets and algorithms
 
 _(It is currently not possible to remove datasets or algorithms if they have already been executed, because they are linked to their results. We work on that issue.)_
 
-### Stop
+### Stop Metanome
 To stop Metanome, go to the console with the server's log messages and hit Ctrl+c. Then, accept the termination request. All data sources, algorithms and results will be stored in the _deployment\<version\>_ folder. So, if you start Metanome again later, they are still available.
 
 ### Manage Algorithms
