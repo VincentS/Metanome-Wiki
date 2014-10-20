@@ -1,5 +1,7 @@
 ### Download
-You can download a Metanome build at https://www.hpi.uni-potsdam.de/naumann/sites/metanome/files/ . The deployment\<version\>.zip contains all Metanome binaries and a Jetty web server.
+You can download a Metanome build at https://www.hpi.uni-potsdam.de/naumann/sites/metanome/files/ . The deployment\<version\>.zip contains all Metanome binaries and a Jetty web server. Extract it to a location of choice. 
+
+Please note that you should not copy or rename the deployment\<version\> folder if you started Metanome once. Due to the use of relative pathes, you would loose all your data within Metanome, because the data is then not correctly referenced any more!
 
 ### Start
 To start Metanome, extract the deployment<version>.zip and run either deployment<version>\run.bat if you are using Windows or deployment\<version\>\run.sh if you are using Linux. The scripts start the Jetty web server and automatically deploy Metanome. A console will show you the status of the deployment. When the console outputs "Started SelectChannelConnector@0.0.0.0:8080", your Metanome instance is running and ready to be used. 
@@ -9,6 +11,9 @@ Now start a web browser like Firefox, enter "localhost:8080" in the address bar 
 When you first start Metanome, there are several example datasets and algorithms. Most of the algorithms are only placeholders and do not provide real functionality. A good idea is to first delete all input sources and algorithms in your Metanome instance. Then, add your own sources and algorithms. You can find real algorithms at, for instance, the Metanome home page: https://hpi.de/naumann/projects/data-profiling-and-analytics/metanome-data-profiling.html
 
 _(Currently, it is not possible to remove datasets or algorithms if they have already been executed, because they are linked to the results that are assigned to these objects. We work on that issue)_
+
+### Stop
+To stop Metanome, go to the console and hit Ctrl+c. Then, accept the termination request. All data sources, algorithms and results will be stored in the deployment\<version\> folder. If you start Metanome again later, they are still available.
 
 ### Manage Algorithms
 On the Algorithms tab within Metanome, you can remove and add algorithms. You can choose a new algorithm as soon as you obtained the according Metanome-conforme jar-file and placed it in Metanome's algorithm folder: 
