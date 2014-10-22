@@ -33,9 +33,12 @@ When implementing the configuration specification interfaces note that Metanome 
 
 ![](https://github.com/HPI-Information-Systems/Metanome/wiki/algorithm_types.png)
 
-### Building a TestRunner
+### Running your Algorithm
+
+## Run in Metanom 
 The algorithm that you build can run within Metanome but you cannot start it in your IDE, because it needs external configuration. So you need to compile and package the algorithm and put it into a running Metanome instance in order to execute it on a specific dataset. That is nice for the shipping of your algorithm but impracticable for development. For this reason, we propose to write a TestRunner project that mocks the functionality of Metanome and lets you execute and debug your algorithm in your IDE.
 
+## Building a TestRunner
 A TestRunner is a project that declares the Metanome _backend_ project as dependency in its pom.xml file. In this way, it has access to all Metanome classes. Additionally, it declares the new profiling algorithm as a dependency. As the TestRunner can now utilize both Metanome and algorithm classes, it can instantiate the algorithm, set the required parameters and execute it. 
 
 Students of the "Data Profiling and Data Cleansing" lecture are given a _MetanomeTestRunner_ project that can serve as a template for the TestRunner. Like the algorithm development project, this project needs to be imported into your development IDE as a Maven project. Afterwards, change the pom.xml of the project so that it references your new algorithm instead of BINDER. Then, change the _MetanomeMock_ class in order to configure your algorithm instead of BINDER. You can change the configuration values in the _Config_ class as well to serve your needs. Your algorithm will require at least an _InputGenerator_ and a _ResultReceiver_. It is absolutely fine if no further parameters are needed! Finally, you have to configure the execution of your algorithm. You will find the _main()_ function in the _Main_ class and examples for execution code in the _MetanomeTestRunner_ class. However, it depends on your experiments, your settings and your data how the execution should look like. To run the TestRunner, you have to run Maven's _package_ goal first so that it downloads all Metanome dependencies. Then, you can run the TestRunner as a common java project within your IDE.
