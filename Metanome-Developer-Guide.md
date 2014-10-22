@@ -11,7 +11,7 @@ As a web application, Metanome consists of two major projects: The _backend_ pro
 * **test_helper**: This project contains common testing functionality for Metanome. It is used in Metanome's JUnit tests.
 * **testing_algorithms**: This project contains (dummy) profiling algorithms used by Metanome's automated test cases. The purpose of these algorithms is to check the functionality of the Metanome algorithm interfaces. But a developer can also inspect these algorithms to get an idea of how to implement the Metanome interfaces. 
 
-### Starting a new profiling algorithm
+### Starting a new profiling Algorithm
 The easiest way to start a new profiling algorithm is to copy the template project _algorithm_template_ from the _algorithm_template_root_ project of the Metanome GitHub repository into your private workspace on your local machine. Then, import the copied project into your development IDE of choice (e.g. Eclipse or IntelliJ) as Maven project. Afterwards, change the name of the algorithm from _algorithm_template_ to the name of your algorithm and also change the package names if needed. These changes also require you to change the according names in the pom.xml file of your project.
 
 Having configured your project, change the implemented Metanome interfaces in the code files according to the type of profiling algorithm that you want to implement. An overview of the provided interfaces is given below. 
@@ -22,7 +22,7 @@ Finally, you can use maven to compile your algorithm into a Metanome conform jar
 
 ![Interface of the BINDER Inclusion Dependency algorithm](https://hpi.de/fileadmin/hpi/FG_Naumann/projekte/repeatability/DataProfiling/Metanome/interface.png)
 
-### The Metanome algorithm interface
+### The Metanome Algorithm Interface
 The _algorithm_integration_ project offers a set of interfaces for different purposes. First, your algorithm should implement one (or more) **task interfaces** e.g. _UniqueColumnCombinationsAlgorithm_,  _InclusionDependencyAlgorithm_ or _FunctionalDependencyAlgorithm_. This automatically defines the kind of output that Metanome expects from your algorithm. 
 
 The algorithm must, furthermore, define the kind of **input data** that it can process. For instance, _FileInputParameterAlgorithm_ says that (csv) files can be processed and _DatabaseConnectionParameterAlgorithm_ says that a database connection can be used as data source. Note that an algorithm can only use one of these interfaces. If both files and databases can be used as input, then _RelationalParameterAlgorithm_ is the interface to go with.
