@@ -18,7 +18,7 @@ Having configured your project, change the implemented Metanome interfaces in th
 
 Hint: It has been shown that separating the profiling algorithm from the interface implementation is a good pattern. So you could have one class ''MyAlgorithm'' that is the implementation of your new profiling algorithm and one class e.g. ''MyAlgorithmConfigurator'' that implements the Metanome algorithm interface and configures your algorithm. Thereby, ''MyAlgorithmConfigurator'' can either subclass ''MyAlgorithm'' or wrapper ''MyAlgorithm'' to set the configuration parameters given by Metanome on the actual algorithm. Note that ''MyAlgorithmConfigurator'' must then be defined as the bootstrap class in the pom.xml of the profiling algorithm.
 
-Finally, you can use maven to compile your algorithm into a Metanome conform jar. This jar file can then be registered in a running Metanome instance as described [here](https://github.com/HPI-Information-Systems/Metanome/wiki/Metanome-User-Guide#manage-algorithms).
+Finally, you can use maven to compile your algorithm into a Metanome conform jar. This jar file can then be registered in a running Metanome instance as described [https://github.com/HPI-Information-Systems/Metanome/wiki/Metanome-User-Guide#manage-algorithms here].
 
 ![Interface of the BINDER Inclusion Dependency algorithm](https://hpi.de/fileadmin/hpi/FG_Naumann/projekte/repeatability/DataProfiling/Metanome/interface.png)
 
