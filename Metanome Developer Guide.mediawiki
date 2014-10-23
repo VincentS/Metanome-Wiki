@@ -20,7 +20,7 @@ Hint: It has been shown that separating the profiling algorithm from the interfa
 
 Finally, you can use maven to compile your algorithm into a Metanome conform jar. This jar file can then be registered in a running Metanome instance as described [https://github.com/HPI-Information-Systems/Metanome/wiki/Metanome-User-Guide#manage-algorithms here].
 
-[[https://hpi.de/fileadmin/hpi/FG_Naumann/projekte/repeatability/DataProfiling/Metanome/interface.png|Interface of the BINDER Inclusion Dependency algorithm]]
+[[https://hpi.de/fileadmin/hpi/FG_Naumann/projekte/repeatability/DataProfiling/Metanome/interface.png| Interface of the BINDER Inclusion Dependency algorithm]]
 
 === The Metanome Algorithm Interface ===
 The ''algorithm_integration'' project offers a set of interfaces for different purposes. First, your algorithm should implement one (or more) **task interfaces** e.g. ''UniqueColumnCombinationsAlgorithm'',  ''InclusionDependencyAlgorithm'' or ''FunctionalDependencyAlgorithm''. This automatically defines the kind of output that Metanome expects from your algorithm. 
@@ -31,12 +31,12 @@ Finally, the algorithm can specify **parameter types** e.g. ''IntegerParameterAl
 
 When implementing the configuration specification interfaces note that Metanome will set only those parameters that have been requested by the algorithm in ''getConfigurationRequirements()'' before!
 
-![](https://github.com/HPI-Information-Systems/Metanome/wiki/algorithm_types.png)
+[[https://github.com/HPI-Information-Systems/Metanome/wiki/algorithm_types.png]]
 
 === Running your Algorithm ===
 
 ==== Run in Metanom ====
-The algorithm that you build can run within Metanome but you cannot start it in your IDE, because it needs external configuration. So you need to compile and package the algorithm and put it into a running Metanome instance in order to execute it on a specific dataset (as described [here](https://github.com/HPI-Information-Systems/Metanome/wiki/Metanome-User-Guide#manage-algorithms)). That is nice for the shipping of your algorithm but impracticable for development. For this reason, we propose to write a TestRunner project that mocks the functionality of Metanome and lets you execute and debug your algorithm in your IDE.
+The algorithm that you build can run within Metanome but you cannot start it in your IDE, because it needs external configuration. So you need to compile and package the algorithm and put it into a running Metanome instance in order to execute it on a specific dataset (as described [https://github.com/HPI-Information-Systems/Metanome/wiki/Metanome-User-Guide#manage-algorithms here]). That is nice for the shipping of your algorithm but impracticable for development. For this reason, we propose to write a TestRunner project that mocks the functionality of Metanome and lets you execute and debug your algorithm in your IDE.
 
 ==== Building a TestRunner ====
 A TestRunner is a project that declares the Metanome ''backend'' project as dependency in its pom.xml file. In this way, it has access to all Metanome classes. Additionally, it declares the new profiling algorithm as a dependency. As the TestRunner can now utilize both Metanome and algorithm classes, it can instantiate the algorithm, set the required parameters and execute it. 
