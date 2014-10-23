@@ -1,5 +1,5 @@
 === Download Metanome ===
-You can download a Metanome build at the [https://www.hpi.uni-potsdam.de/naumann/sites/metanome/files/ download page]. The ''deployment&lsaquo;version&lsaquo;.zip'' file contains all Metanome binaries and a Jetty web server. Extract it to a location of choice. 
+You can download a Metanome build at the [https://www.hpi.uni-potsdam.de/naumann/sites/metanome/files/ download page]. The ''deployment&lt;version&gt;.zip'' file contains all Metanome binaries and a Jetty web server. Extract it to a location of choice. 
 
 Please note that if you started Metanome once, you should not copy or rename the ''deployment<version>'' folder afterwards. Otherwise, you would loose all your data within Metanome, because due to the use of relative pathes the data is then not correctly referenced any more!
 
