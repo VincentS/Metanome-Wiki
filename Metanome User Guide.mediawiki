@@ -18,14 +18,14 @@ To stop Metanome, go to the console with the server's log messages and hit Ctrl+
 === Manage Algorithms ===
 On the Algorithms tab within Metanome, you can remove and add algorithms. You can choose a new algorithm as soon as you obtained the according Metanome-conforme jar-file and placed it in Metanome's algorithm folder: 
 
-'''deployment<version>/WEB-INF/classes/algorithms/'''
+'''deployment&lt;version&gt;/WEB-INF/classes/algorithms/'''
 
 If the algorithm does not appear in the dropdown list although it was placed in the correct folder, please refresh the web page.
 
 === Manage Input Sources ===
 Adding new input sources is similar to adding new algorithms. First, place the input file(s) in Metanome's input folder:
 
-'''deployment<version>/WEB-INF/classes/inputData/'''
+'''deployment&lt;version&gt;/WEB-INF/classes/inputData/'''
 
 You can also setup a database and place your data there. Then, go to Metanome's Data Sources tab and use the form at the end of that page to specify a new input source. It is very important to specify the correct advanced options for your dataset, for instance, the used separator character, quote character, or escape character. If you make a mistake here, Metanome cannot parse the source correctly!
 
