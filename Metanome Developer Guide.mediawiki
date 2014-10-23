@@ -29,11 +29,9 @@ The algorithm must, furthermore, define the kind of '''input data''' that it can
 
 Finally, the algorithm can specify '''parameter types''' e.g. ''IntegerParameterAlgorithm'', ''BooleanParameterAlgorithm'' or ''StringParameterAlgorithm''. This allows the algorithm to query parameters of the respective type from Metanome. 
 
-[[https://github.com/HPI-Information-Systems/Metanome/wiki/algorithm_types.png]]
+[[https://github.com/HPI-Information-Systems/Metanome/wiki/algorithm_types.png Algorithm Interfaces]]
 
 When implementing the configuration specification interfaces note that Metanome will set only those parameters that have been requested by the algorithm in ''getConfigurationRequirements()'' before!
-
-[[https://github.com/HPI-Information-Systems/Metanome/docs/src/main/latex/algorithm_integration\algorithm_sequence.png]]
 
 == Running your Algorithm ==
 
