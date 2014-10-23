@@ -3,7 +3,7 @@ You can download a Metanome build at the [https://www.hpi.uni-potsdam.de/naumann
 
 Please note that if you started Metanome once, you should not copy or rename the ''deployment&lt;version&gt;'' folder afterwards. Otherwise, you would loose all your data within Metanome, because due to the use of relative pathes the data is then not correctly referenced any more!
 
-== Run Metanom
+== Run Metanom ==
 === Start Metanome ===
 To start Metanome, extract the ''deployment&lt;version&gt;.zip'' and run either ''deployment&lt;version&gt;/run.bat'' if you are using Windows or ''deployment&lt;version&gt;/run.sh'' if you are using Linux. Both scripts start a Jetty web server and automatically deploy Metanome. A console will show you the status of the deployment. When the console outputs "Started SelectChannelConnector&#64;0.0.0.0:8080", your Metanome instance is running and ready to be used. 
 
