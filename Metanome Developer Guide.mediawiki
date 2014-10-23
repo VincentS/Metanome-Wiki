@@ -25,7 +25,6 @@ Finally, you can use maven to compile your algorithm into a Metanome conform jar
 === The Metanome Algorithm Interfaces ===
 The ''algorithm_integration'' project offers a set of interfaces for different purposes. First, your algorithm should implement one (or more) '''task interfaces''' e.g. ''UniqueColumnCombinationsAlgorithm'',  ''InclusionDependencyAlgorithm'' or ''FunctionalDependencyAlgorithm''. This automatically defines the kind of output that Metanome expects from your algorithm. 
 
-==== Interfaces for Configuration Requirements ====
 The algorithm must, furthermore, define the kind of '''input data''' that it can process. For instance, ''FileInputParameterAlgorithm'' says that (csv) files can be processed and ''DatabaseConnectionParameterAlgorithm'' says that a database connection can be used as data source. Note that an algorithm can only use one of these interfaces. If both files and databases can be used as input, then ''RelationalParameterAlgorithm'' is the interface to go with.
 
 Finally, the algorithm can specify '''parameter types''' e.g. ''IntegerParameterAlgorithm'', ''BooleanParameterAlgorithm'' or ''StringParameterAlgorithm''. This allows the algorithm to query parameters of the respective type from Metanome. 
