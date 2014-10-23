@@ -31,7 +31,7 @@ Finally, the algorithm can specify '''parameter types''' e.g. ''IntegerParameter
 
 [[https://github.com/HPI-Information-Systems/Metanome/wiki/algorithm_types.png]]
 
-When implementing the configuration requirement interfaces note that Metanome will set only those parameters that have been requested by the algorithm in ''getConfigurationRequirements()'' before (see [https://hpi.de/fileadmin/hpi/FG_Naumann/projekte/repeatability/DataProfiling/Metanome/interface.png|Interface of the BINDER Inclusion Dependency algorithm here] for an example)!
+When implementing the configuration requirement interfaces note that Metanome will set only those parameters that have been requested by the algorithm in ''getConfigurationRequirements()'' before (see [https://hpi.de/fileadmin/hpi/FG_Naumann/projekte/repeatability/DataProfiling/Metanome/interface.png here] for an example)!
 
 == Running your Algorithm ==
 
