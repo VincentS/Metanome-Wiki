@@ -1,4 +1,4 @@
-=== The Metanome Repository ===
+== The Metanome Repository ==
 As a web application, Metanome consists of two major projects: The ''backend'' project and the ''frontend'' project. A third project, the ''algorithm_integration'', contains the Metanome algorithm interface that we need to include in our profiling algorithms in order to run them in Metanome. In the following, we list and describe all sub-projects of Metanome in more detail:
 
 * '''algorithm_helper''': This project contains useful classes and functions for the development of profiling algorithms. Some contructs like ''position list indices'' or ''sub set graphs'' might be useful for different algorithms, so we collect such data structures in a dedicated package.
