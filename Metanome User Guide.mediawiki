@@ -4,11 +4,11 @@ You can download a Metanome build at the [https://www.hpi.uni-potsdam.de/naumann
 Please note that if you started Metanome once, you should not copy or rename the ''deployment&lt;version&gt;'' folder afterwards. Otherwise, you would loose all your data within Metanome, because due to the use of relative pathes the data is then not correctly referenced any more!
 
 === Start Metanome ===
-To start Metanome, extract the ''deployment&lt;version&gt;.zip'' and run either ''deployment&lt;version&gt;/run.bat'' if you are using Windows or ''deployment&lt;version&gt;\run.sh'' if you are using Linux. Both scripts start a Jetty web server and automatically deploy Metanome. A console will show you the status of the deployment. When the console outputs "Started SelectChannelConnector@0.0.0.0:8080", your Metanome instance is running and ready to be used. 
+To start Metanome, extract the ''deployment&lt;version&gt;.zip'' and run either ''deployment&lt;version&gt;/run.bat'' if you are using Windows or ''deployment&lt;version&gt;/run.sh'' if you are using Linux. Both scripts start a Jetty web server and automatically deploy Metanome. A console will show you the status of the deployment. When the console outputs "Started SelectChannelConnector@0.0.0.0:8080", your Metanome instance is running and ready to be used. 
 
 Now start a web browser like Firefox, enter "localhost:8080" in the address bar and hit enter. The browser then connects to your Metanome instance and you can start profiling.
 
-When you first start Metanome, there are several example datasets and algorithms. Most of the algorithms are only placeholders and do not provide real functionality. A good idea is to first delete all input sources and algorithms in your Metanome instance. Then, add your own sources and algorithms. You can find real algorithms at, for instance, the [https://hpi.de/naumann/projects/data-profiling-and-analytics/metanome-data-profiling.html Metanome home page]
+When you first start Metanome, there are several example datasets and algorithms. Most of the algorithms are only placeholders and do not provide real functionality. A good idea is to first delete all input sources and algorithms in your Metanome instance. Then, add your own sources and algorithms. You can find real algorithms at, for instance, the [https://hpi.de/naumann/projects/data-profiling-and-analytics/metanome-data-profiling.html Metanome home page].
 
 ''(It is currently not possible to remove datasets or algorithms if they have already been executed, because they are linked to their results. We work on that issue.)''
 
