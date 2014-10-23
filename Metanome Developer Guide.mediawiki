@@ -20,7 +20,7 @@ Hint: It has been shown that separating the profiling algorithm from the interfa
 
 Finally, you can use maven to compile your algorithm into a Metanome conform jar. This jar file can then be registered in a running Metanome instance as described [https://github.com/HPI-Information-Systems/Metanome/wiki/Metanome-User-Guide#manage-algorithms here].
 
-[[https://hpi.de/fileadmin/hpi/FG_Naumann/projekte/repeatability/DataProfiling/Metanome/interface.png| caption Interface of the BINDER Inclusion Dependency algorithm]]
+[[https://hpi.de/fileadmin/hpi/FG_Naumann/projekte/repeatability/DataProfiling/Metanome/interface.png|center|caption Interface of the BINDER Inclusion Dependency algorithm]]
 
 === The Metanome Algorithm Interface ===
 The ''algorithm_integration'' project offers a set of interfaces for different purposes. First, your algorithm should implement one (or more) **task interfaces** e.g. ''UniqueColumnCombinationsAlgorithm'',  ''InclusionDependencyAlgorithm'' or ''FunctionalDependencyAlgorithm''. This automatically defines the kind of output that Metanome expects from your algorithm. 
