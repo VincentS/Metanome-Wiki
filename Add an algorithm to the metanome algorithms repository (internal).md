@@ -9,7 +9,7 @@ To add an existing algorithm project to the repository of metanome algorithms th
   <parent>
     <groupId>de.metanome.algorithms</groupId>
     <artifactId>algorithms</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>${metanome.version}</version>
     <relativePath>../../pom.xml</relativePath>
   </parent>
     ```
