@@ -11,8 +11,10 @@ As a web application, Metanome consists of two major projects: The ''backend'' p
 * '''test_helper''': This project contains common testing functionality for Metanome. It is used in Metanome's JUnit tests.
 * '''testing_algorithms''': This project contains (dummy) profiling algorithms used by Metanome's automated test cases. The purpose of these algorithms is to check the functionality of the Metanome algorithm interfaces. But a developer can also inspect these algorithms to get an idea of how to implement the Metanome interfaces. 
 
-== Starting a new profiling Algorithm ==
-The easiest way to start a new profiling algorithm is to copy the template project ''algorithm_template'' from the ''algorithm_template_root'' project of the Metanome GitHub repository into your private workspace on your local machine. Then, import the copied project into your development IDE of choice (e.g. Eclipse or IntelliJ) as Maven project. Afterwards, change the name of the algorithm from ''algorithm_template'' to the name of your algorithm and also change the package names if needed. These changes also require you to change the according names in the pom.xml file of your project.
+== Building a Profiling Algorithms for Metanome ==
+
+=== Getting started ===
+The easiest way to start a new profiling algorithm is to copy the template project ''algorithm_template'' from the ''algorithm_template_root'' project of the Metanome GitHub repository into your private workspace on your local machine. Then, import the copied project into your development IDE of choice (e.g. Eclipse or IntelliJ) as Maven project. Afterwards, change the name of the algorithm from ''algorithm_template'' to the name of your algorithm and also change the package names if needed. These changes also require you to change the according names in the pom.xml file of your project (Do not forget to set your interface-implementing class as Algorithm-Bootstrap-Class!).
 
 Having configured your project, change the implemented Metanome interfaces in the code files according to the type of profiling algorithm that you want to implement. An overview of the provided interfaces is given below. 
 
@@ -33,12 +35,12 @@ Finally, the algorithm can specify '''parameter types''' e.g. ''IntegerParameter
 
 When implementing the configuration requirement interfaces note that Metanome will set only those parameters that have been requested by the algorithm in ''getConfigurationRequirements()'' before (see [https://hpi.de/fileadmin/hpi/FG_Naumann/projekte/repeatability/DataProfiling/Metanome/interface.png here] for an example)!
 
-== Running your Algorithm ==
+== Running a Profiling Algorithm in Metanome ==
 
-=== Run in Metanome ===
+=== Deployment ===
 The algorithm that you build can run within Metanome but you cannot start it in your IDE, because it needs external configuration. So you need to compile and package the algorithm and put it into a running Metanome instance in order to execute it on a specific dataset (as described [https://github.com/HPI-Information-Systems/Metanome/wiki/Metanome-User-Guide#manage-algorithms here]). That is nice for the shipping of your algorithm but impracticable for development. For this reason, we propose to write a TestRunner project that mocks the functionality of Metanome and lets you execute and debug your algorithm in your IDE.
 
-=== Building a TestRunner ===
+=== TestRunner ===
 A TestRunner is a project that declares the Metanome ''backend'' project as dependency in its pom.xml file. In this way, it has access to all Metanome classes. Additionally, it declares the new profiling algorithm as a dependency. As the TestRunner can now utilize both Metanome and algorithm classes, it can instantiate the algorithm, set the required parameters and execute it. 
 
 Students of the "Data Profiling and Data Cleansing" lecture are given a "MetanomeTestRunner" project that can serve as a template for the TestRunner. Like the algorithm development project, this project needs to be imported into your development IDE as a Maven project. Afterwards, change the pom.xml of the project so that it references your new algorithm instead of BINDER. Then, change the ''MetanomeMock'' class in order to configure your algorithm instead of BINDER. You can change the configuration values in the ''Config'' class as well to serve your needs. Your algorithm will require at least an ''InputGenerator'' and a ''ResultReceiver''. It is absolutely fine if no further parameters are needed! Finally, you have to configure the execution of your algorithm. You will find the ''main()'' function in the ''Main'' class and examples for execution code in the ''MetanomeTestRunner'' class. However, it depends on your experiments, your settings and your data how the execution should look like. To run the TestRunner, you have to run Maven's ''package'' goal first so that it downloads all Metanome dependencies. Then, you can run the TestRunner as a common java project within your IDE.
