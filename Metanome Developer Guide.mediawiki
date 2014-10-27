@@ -35,7 +35,7 @@ When implementing the configuration requirement interfaces note that Metanome wi
 
 == Running your Algorithm ==
 
-=== Run in Metanom ===
+=== Run in Metanome ===
 The algorithm that you build can run within Metanome but you cannot start it in your IDE, because it needs external configuration. So you need to compile and package the algorithm and put it into a running Metanome instance in order to execute it on a specific dataset (as described [https://github.com/HPI-Information-Systems/Metanome/wiki/Metanome-User-Guide#manage-algorithms here]). That is nice for the shipping of your algorithm but impracticable for development. For this reason, we propose to write a TestRunner project that mocks the functionality of Metanome and lets you execute and debug your algorithm in your IDE.
 
 === Building a TestRunner ===
