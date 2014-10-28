@@ -17,3 +17,4 @@ To add an existing algorithm project to the repository of metanome algorithms th
 1. remove the version tag from your modules - the same version as in the root pom is used
 1. remove unnecessary repository information e.g. all repos that are defined in root/parent should not be duplicated
 1. all versions of metanome dependencies should be set to ${metanome.version}
+1. add the output of the new algorithm to the collect.bat and collect.sh files
