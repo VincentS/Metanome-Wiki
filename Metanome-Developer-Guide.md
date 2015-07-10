@@ -11,6 +11,10 @@
 9. Pull request should be reviewed and merged by another person.
 10. Push often, so that other developers can see and review your progress.
 
+**Metanome API**
+
+The documentation of the API of Metanome is written in [API Blueprint](https://apiblueprint.org/) and can be found [here](http://docs.metanome.apiary.io/#).
+
 **Some useful links:**
 
 * [How to set up debugging for frontend](https://github.com/HPI-Information-Systems/Metanome/wiki/Set-Up-Debugging)
