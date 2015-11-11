@@ -28,6 +28,5 @@ Each time you make changes to the backend you have to run these steps again.
 When the backend is running you can start the frontend by executing `gulp serve` in the `src/main/webapp` directory. This launches a browser sync server on your source files, so you do not have to start the frontend again while making changes to your webapp.
 You can then open the frontend under [http://localhost:3000/](http://localhost:3000/).
 
-# Building frontend
 
-To build an optimized version of your application in `/src/main/webapp/metanome` you can either execute `gulp` or `gulp build` in `src/main/webapp` or run the maven task `mvn install`.
+For building an optimized version of the metanome application you have to execute `gulp` of `gulp build` in `src/main/webapp`. The optimized version can then be found in `/src/main/webapp/metanome`.
