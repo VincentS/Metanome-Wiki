@@ -17,6 +17,5 @@ The documentation of the API of Metanome is written in [API Blueprint](https://a
 
 **Some useful links:**
 
-* [How to set up debugging for frontend](https://github.com/HPI-Information-Systems/Metanome/wiki/Set-Up-Debugging)
-* [How to create a new type of configuration parameter](https://github.com/HPI-Information-Systems/Metanome/wiki/Creating-new-Types-of-Configuration-Parameters)
+* [How to set up development on frontend](https://github.com/HPI-Information-Systems/Metanome/wiki/Metanome-Frontend)
 * [How to install the google style guide](https://github.com/HPI-Information-Systems/Metanome/wiki/Installing-the-google-styleguide-settings-in-intellij-and-eclipse)
