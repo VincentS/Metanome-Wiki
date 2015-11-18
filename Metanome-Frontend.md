@@ -21,7 +21,7 @@ To ensure that users, who check out Metanome, have all these dependencies we use
 
 To start the backend jetty-server do the following:
 
-(1. Run `mvn clean install` for building the `.war` file in the `target` directory.)
+1. Run `mvn clean install` for building the `.war` file in the `target` directory.
 2. Start the jetty-server with `mvn jetty:run-war`
 
 Each time you make changes to the backend you have to run these steps again.
