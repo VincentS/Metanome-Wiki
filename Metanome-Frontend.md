@@ -15,8 +15,9 @@ The `webapp` folder contains the actual frontend. It is structured according to 
 
 ## Development setup
 
-The project is build with gulp, a streaming build system. The libraries are defined by bower, so that you first have to install all dependencies. Therefore, we use the [maven-frontend-plugin](https://github.com/eirslett/frontend-maven-plugin). So, when you initially run `mvn clean install` all dependencies will be installed. The installation step will be skipped the next time you run that command.
+For local development you first have to install `node`, `bower` and `gulp`.
 
+To ensure that users, who check out Metanome, have all these dependencies we use the [maven-frontend-plugin](https://github.com/eirslett/frontend-maven-plugin). This will locally install the dependencies when calling `mvn clean install`, so that the user does not have to install anything by himself. 
 
 To start the backend jetty-server do the following:
 
@@ -27,6 +28,5 @@ Each time you make changes to the backend you have to run these steps again.
 
 When the backend is running you can start the frontend by executing `gulp serve` in the `src/main/webapp` directory. This launches a browser sync server on your source files, so you do not have to start the frontend again while making changes to your webapp.
 You can then open the frontend under [http://localhost:3000/](http://localhost:3000/).
-
 
 For building an optimized version of the metanome application you have to execute `gulp` of `gulp build` in `src/main/webapp`. The optimized version can then be found in `/src/main/webapp/metanome`.
