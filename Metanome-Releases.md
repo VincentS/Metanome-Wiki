@@ -9,7 +9,7 @@ So you only need the gpg authentification files, if you want to release Metanome
 To turn on the profile add `-DperformRelease=true` to your maven command when releasing Metanome.
 
 For pushing Metanome to Sonatype you need the correct access rights.
-Therefore you have to create a Jira account and open a ticket to get developer access to Metanome.
+Therefore you have to create a JIRA account and open a ticket to get developer access to Metanome.
 For details see [here](http://central.sonatype.org/pages/ossrh-guide.html#SonatypeOSSMavenRepositoryUsageGuide-8a.ReleaseIt).
 
 To check whether you have the correct access rights or not, see this [page](http://blog.sonatype.com/2010/11/what-to-do-when-nexus-returns-401/#.Vp9K-XUrJvA).
