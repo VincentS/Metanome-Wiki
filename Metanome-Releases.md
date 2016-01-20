@@ -14,4 +14,4 @@ For details see [here](http://central.sonatype.org/pages/ossrh-guide.html#Sonaty
 
 To check whether you have the correct access rights or not, see this [page](http://blog.sonatype.com/2010/11/what-to-do-when-nexus-returns-401/#.Vp9K-XUrJvA).
 
-If `mvn release:prepare` is successfully executed, git created a tag with the version id. If an error occurs during the next steps and you want to roll back everything, you have to delete this tag. How to delete it, is explained [here](https://nathanhoad.net/how-to-delete-a-remote-git-tag).
+If `mvn release:prepare` is successfully executed, git has created a tag with the version id. If an error occurs during the next steps and you want to roll back everything, you have to delete this tag. How to delete it, is explained [here](https://nathanhoad.net/how-to-delete-a-remote-git-tag).
