@@ -12,6 +12,6 @@ For pushing Metanome to Sonatype you need the correct access rights.
 Therefore you have to create a Jira account and open a ticket to get developer access to Metanome.
 For details see [here](http://central.sonatype.org/pages/ossrh-guide.html#SonatypeOSSMavenRepositoryUsageGuide-8a.ReleaseIt).
 
-To check weather you have the correct access rights or not, see this [page](http://blog.sonatype.com/2010/11/what-to-do-when-nexus-returns-401/#.Vp9K-XUrJvA).
+To check whether you have the correct access rights or not, see this [page](http://blog.sonatype.com/2010/11/what-to-do-when-nexus-returns-401/#.Vp9K-XUrJvA).
 
-Note: Currently the URL `https://oss.sonatype.org` is used as Repository URL for release deployment instead of `https://oss.sonatype.org/service/local/staging/deploy/maven2/`. I got `Unauthorized` when publishing to `https://oss.sonatype.org/service/local/staging/deploy/maven2/`.
+If `mvn release:prepare` is successfully executed, git created a tag with the version id. If an error occurs during the next steps and you want to roll back everything, you have to delete this tag. How to delete it, is explained [here](https://nathanhoad.net/how-to-delete-a-remote-git-tag).
