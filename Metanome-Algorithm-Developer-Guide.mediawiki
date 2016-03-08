@@ -7,7 +7,7 @@ As a web application, Metanome consists of two major projects: The ''backend'' p
 * '''backend''': This project contains the backend logic of Metanome. It defines how algorithms are executed and how assets are stored on disk. If a developer wants to learn how Metanome works, this is the project to explore first.
 * '''deployment''': This project defines how Metanome is packaged and deployed for the user. It contains the batch files with which Metanome can be deployed on a local Jetty web server.
 * '''docs''': This project should contain documentation for Metanome, but since Metanome is under heavy development the given material might not always be up to date.
-* '''frontend''': This project contains the web frontend of Metanome. It is based on the Google Web Toolkit (GWT) and implements the user interaction of Metanome.
+* '''frontend''': This project contains the web frontend of Metanome. It is based on AngularJS and implements the user interaction of Metanome.
 * '''test_helper''': This project contains common testing functionality for Metanome. It is used in Metanome's JUnit tests.
 * '''testing_algorithms''': This project contains (dummy) profiling algorithms used by Metanome's automated test cases. The purpose of these algorithms is to check the functionality of the Metanome algorithm interfaces. But a developer can also inspect these algorithms to get an idea of how to implement the Metanome interfaces. 
 
