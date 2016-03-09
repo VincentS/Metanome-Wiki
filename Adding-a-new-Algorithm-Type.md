@@ -37,6 +37,5 @@ Create a testing algorithm for you new algorithm type.
 ***
 
 
-**Besides, you have to add and update test!**
-
-This list may not be complete, please update it!
+**Add and update test!!!** 
+This list might not be complete, please update it!
