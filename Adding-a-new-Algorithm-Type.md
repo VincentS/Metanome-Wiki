@@ -20,9 +20,9 @@ For adding a new algorithm type, you have to do the following steps:
 5. In `de.metanome.backend.resources.AlgorithmResource` add a method for listing all algorithms of your type. Also update the `listAlgorithms` and `setAlgorithmTypes` methods.
 6. Add missing methods to all result receivers in the package `de.metanome.backend.result_receiver`. Besides an `if`-statement for reading the results has to be added in `ResultReader`. You can either use your own format or use JSON.
 7. Update the result post processing:
-* Create a `ResultAnalyzer`, `ResultStore`, `ResultComparator`, `ResultRanking` and a new `Result` for your new result type.
-* Add `if`-statement to `de.metanome.backend.result_postprocessing.ResultPostProcessor`.
-* For details about the result post processing, see [here](https://github.com/HPI-Information-Systems/Metanome/wiki/Result-Post-Processing).
+ * Create a `ResultAnalyzer`, `ResultStore`, `ResultComparator`, `ResultRanking` and a new `Result` for your new result type.
+ * Add `if`-statement to `de.metanome.backend.result_postprocessing.ResultPostProcessor`.
+ * For details about the result post processing, see [here](https://github.com/HPI-Information-Systems/Metanome/wiki/Result-Post-Processing).
 
 **frontend**
 
