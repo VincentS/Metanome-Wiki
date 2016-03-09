@@ -22,7 +22,7 @@ For adding a new algorithm type, you have to do the following steps:
 7. Update the result post processing:
 * Create a `ResultAnalyzer`, `ResultStore`, `ResultComparator`, `ResultRanking` and a new `Result` for your new result type.
 * Add `if`-statement to `de.metanome.backend.result_postprocessing.ResultPostProcessor`.
-* For details about the result post processing, see here.
+* For details about the result post processing, see [here](https://github.com/HPI-Information-Systems/Metanome/wiki/Result-Post-Processing).
 
 **frontend**
 
