@@ -21,3 +21,6 @@ The documentation of the API of Metanome is written in [API Blueprint](https://a
 * [How to install the google style guide](https://github.com/HPI-Information-Systems/Metanome/wiki/Installing-the-google-styleguide-settings-in-intellij-and-eclipse)
 * [How to publish a new Metanome release](https://github.com/HPI-Information-Systems/Metanome/wiki/Metanome-Releases)
 * [Remote Access](https://github.com/HPI-Information-Systems/Metanome/wiki/Remote-Access)
+* [Details about the result post processing](https://github.com/HPI-Information-Systems/Metanome/wiki/Result-Post-Processing)
+* [How to add a new algorithm type](https://github.com/HPI-Information-Systems/Metanome/wiki/Adding-a-new-Algorithm-Type)
+* [How to add a new configuration parameter](https://github.com/HPI-Information-Systems/Metanome/wiki/Creating-new-Types-of-Configuration-Parameters)
