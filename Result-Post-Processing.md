@@ -1,7 +1,7 @@
 ## Result Post Processing
 
 The result post processing is based on the work of a master project.
-They analyzed and interpret the result of data profiling algorithms.
+They analyzed and interpreted the result of data profiling algorithms.
 Therefore, they add some visualizations and statistics to Metanome.
 Everything located in `de.metanome.backend.result_postprocessing` is based on the code from the master project.
 
