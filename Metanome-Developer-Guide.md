@@ -23,4 +23,4 @@ The documentation of the API of Metanome is written in [API Blueprint](https://a
 * [Remote Access](https://github.com/HPI-Information-Systems/Metanome/wiki/Remote-Access)
 * [Details about the result post processing](https://github.com/HPI-Information-Systems/Metanome/wiki/Result-Post-Processing)
 * [How to add a new algorithm type](https://github.com/HPI-Information-Systems/Metanome/wiki/Adding-a-new-Algorithm-Type)
-* [How to add a new configuration parameter](https://github.com/HPI-Information-Systems/Metanome/wiki/Creating-new-Types-of-Configuration-Parameters)
+* [How to add a new configuration parameter](https://github.com/HPI-Information-Systems/Metanome/wiki/Adding-a-new-Configuration-Parameter)
