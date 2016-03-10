@@ -21,8 +21,8 @@ To ensure that users, who check out Metanome, have all these dependencies we use
 
 To start the backend jetty-server do the following:
 
-1. Run `mvn clean install` for packaging the the frontend.
-2. Start the jetty-server with `mvn jetty:run-war`. This will first packages your webapp as a WAR file and then deploys it to Jetty
+1. Run `mvn clean install` for packaging the frontend.
+2. Start the jetty-server with `mvn jetty:run-war` in the frontend package. This will first packages your webapp as a WAR file and then deploys it to Jetty
 
 Each time you make changes to the backend you have to run these steps again.
 To debug the fronend, just call `mvn jetty:run-war` in debug mode via IntelliJ or eclipse.
