@@ -1,4 +1,4 @@
-Adding a new Configuration Parameter
+##Adding a new Configuration Parameter
 
 For adding a new configuration parameter, you have to do the following steps:
 
@@ -27,4 +27,4 @@ In `new.controller` update the methods `updateParameter` and `readParamsIntoBack
 ***
 
 **Add and update test!!!** 
-This list might not be complete, please update it!
+This list might be incomplete, please update it!
