@@ -2,7 +2,7 @@
 
 For adding a new configuration parameter, you have to do the following steps:
 
-**alogorithm_integeration**
+**algorithm_integration**
 
 1. Implement a configuration setting in `de.metanome.algorithm_integration.configuration`: A configuration setting contains all values, which are set in the frontend and needed for execution. Your setting should extend either `ConfigurationSettingPrimitive` or `ConfigurationSettingDataSource`. 
 2. Implement a configuration requirement in `de.metanome.algorithm_integration.configuration`: A configuration requirement contains a list of configuration settings. It should extend `ConfigurationRequirement`.
