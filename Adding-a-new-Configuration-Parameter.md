@@ -9,7 +9,7 @@ For adding a new configuration parameter, you have to do the following steps:
 3. Add an interface for your configuration parameter `in de.metanome.algorithm_integration.algorithm_types`:
 Each algorithm, which uses your configuration parameter, has to implement this interface. You should name the method according to following pattern: `set<value_name>ConfigurationValue(String identifier, <value_type>... values) throws AlgorithmConfigurationExecution`
 4. Add the method `ConfigurationValue build(<your-configuration-requirement> requirement) throws AlgorithmConfigurationException` to `de.metanome.algorithm_integration.configuration.ConfigurationFactory`.
-5. Add JSONSubTypes for your configuration parameter in `ConfigurationRequirement`, `ConfigurationRequirementDefaultValue`, `ConfigurationSetting` and, when used, `ConfigurationSettingPrimitive`.
+5. Add JSONSubTypes for your configuration parameter in `ConfigurationRequirement`, `ConfigurationRequirementDefaultValue`, `ConfigurationSetting` and `ConfigurationSettingPrimitive` or `ConfigurationSettingDataSource`.
 
 **backend**
 
