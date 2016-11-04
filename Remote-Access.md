@@ -1,10 +1,10 @@
 ## Remote Access
 
-To enable remote access we configured Jetty in a way that it listens to all hosts. 
-Therefore, we set the default host to `0.0.0.0` in `jetty.xml`.
+To enable remote access we configured Tomcat in a way that it listens to all hosts.
 
 The frontend needs to distinguish between development and production.
-If you are in development mode, all your request go to `localhost:8888`. 
+If you are in development mode, all your request go to a second running Tomcat instance
+running the Metanome backend at `localhost:8081`. 
 However, if you use Metanome in production mode, the backend can be started at any url. 
 Your request have to go against that url.
 Therefore, we have to configure the request, which are made from the frontend. 

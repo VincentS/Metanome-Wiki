@@ -5,7 +5,7 @@ As a web application, Metanome consists of two major projects: The ''backend'' p
 * '''algorithm_integration''': This project contains the Metanome interfaces that an algorithm needs to implement in order to run within Metanome. The profiling task of the algorithm defines which interfaces are necessary and which are not. Metanome uses the interface to set configuration parameters, define the input data, start the algorithm and collect the results.
 * '''algorithm_template_root''': This project contains a template with which a developer can start an own profiling algorithm. The template shows how the Maven pom.xml file of a Metanome profiling algorithm could look like and how Metanome should be referenced. 
 * '''backend''': This project contains the backend logic of Metanome. It defines how algorithms are executed and how assets are stored on disk. If a developer wants to learn how Metanome works, this is the project to explore first.
-* '''deployment''': This project defines how Metanome is packaged and deployed for the user. It contains the batch files with which Metanome can be deployed on a local Jetty web server.
+* '''deployment''': This project defines how Metanome is packaged and deployed for the user. It contains the batch files with which Metanome can be deployed on a local Tomcat web server.
 * '''docs''': This project should contain documentation for Metanome, but since Metanome is under heavy development the given material might not always be up to date.
 * '''frontend''': This project contains the web frontend of Metanome. It is based on AngularJS and implements the user interaction of Metanome.
 * '''test_helper''': This project contains common testing functionality for Metanome. It is used in Metanome's JUnit tests.

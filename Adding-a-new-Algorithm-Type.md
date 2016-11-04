@@ -26,7 +26,9 @@ For adding a new algorithm type, you have to do the following steps:
 
 **frontend**
 
-Update the javascript and html files in the following folders: `webapp/src/app/new` and `webapp/src/app/result`
+Update the javascript and html files in the 
+
+The relevant folders are `src/app/new` and `src/app/result`
 
 **testing_algorithms**
 
