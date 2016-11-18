@@ -30,6 +30,6 @@ To debug the frontend, just call `mvn jetty:run-war` in debug mode via IntelliJ 
 When you do not need to run any algorithm while testing the frontend, it is sufficient to run `mvn jetty:run`. This is faster than `mvn jetty:run-war`, because the webapp is deployed from its sources to Jetty.
 
 When the backend is running you can start the frontend by executing `gulp serve` in the `src/` directory. This launches a browser sync server on your source files, so you do not have to start the frontend again while making changes to your webapp.
-You can then open the frontend under [http://localhost:3000/](http://localhost:3000/).
+You can then open the frontend under [http://localhost:8080/](http://localhost:8080/).
 
 For building an optimized version of the metanome application you have to execute `gulp` of `gulp build` in `src/main/webapp`. The optimized version can then be found in `/src/main/webapp/metanome`.
