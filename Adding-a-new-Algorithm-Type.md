@@ -26,7 +26,7 @@ For adding a new algorithm type, you have to do the following steps:
 
 **frontend**
 
-Update the javascript and html files in the 
+Update the Javascript and HTML files in the [Metanome frontend](https://github.com/HPI-Information-Systems/Metanome-Frontend) 
 
 The relevant folders are `src/app/new` and `src/app/result`
 
