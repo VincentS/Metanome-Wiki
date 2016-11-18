@@ -22,7 +22,7 @@ Adapt one testing algorithm so that it uses your configuration requirement.
 
 **frontend**
 
-In `new.controller` update the methods `updateParameter` and `readParamsIntoBackendFormat`.
+In the [Metanome frontend](https://github.com/HPI-Information-Systems/Metanome-Frontend) repository the methods `updateParameter` and `readParamsIntoBackendFormat` in the file `src/app/new/new.controller.js` have to be updated. 
 
 
 ***
