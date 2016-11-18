@@ -11,7 +11,7 @@ The frontend is structured the following way:
 │	├── web.xml 
 ├──  pom.xml
 ~~~
-The Metanome-Frontend repository **LINK** contains the actual frontend. It is structured according to the [Best Practice Recommendations for Angular App Structure](https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub). 
+The [Metanome-Frontend](https://github.com/HPI-Information-Systems/Metanome-Frontend) repository contains the actual frontend. It is structured according to the [Best Practice Recommendations for Angular App Structure](https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub). 
 
 ## Development setup
 
