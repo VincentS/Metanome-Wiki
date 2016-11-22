@@ -11,8 +11,6 @@ Now start a web browser like Firefox, enter "localhost:8080" in the address bar 
 
 When you first start Metanome, there are several example datasets and algorithms. Most of the algorithms are only placeholders and do not provide real functionality. A good idea is to first delete all input sources and algorithms in your Metanome instance. Then, add your own datasets and algorithms. You can find existing profiling algorithms at, for instance, the [https://hpi.de/naumann/projects/data-profiling-and-analytics/metanome-data-profiling.html Metanome home page].
 
-''(It is currently not possible to remove datasets or algorithms if they have already been executed, because they are linked to their results. We work on that issue.)''
-
 === Stop ===
 To stop Metanome, go to the console with the server's log messages and hit Ctrl+C. Then, accept the termination request. All data sources, algorithms and results will be stored in the ''deployment&lt;version&gt;'' folder. So, if you start Metanome again later, they are still available.
 
