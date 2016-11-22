@@ -10,6 +10,7 @@ As a web application, Metanome consists of two major projects: The ''backend'' p
 * '''frontend''': This project contains the web frontend of Metanome. It is based on AngularJS 1.x and implements the user interaction with the Metanome backend. The [Metanome frontend](https://github.com/HPI-Information-Systems/Metanome-Frontend) is maintained in a separate repository.
 * '''test_helper''': This project contains common testing functionality for Metanome. It is used in Metanome's JUnit tests.
 * '''testing_algorithms''': This project contains (dummy) profiling algorithms used by Metanome's automated test cases. The purpose of these algorithms is to check the functionality of the Metanome algorithm interfaces. But a developer can also inspect these algorithms to get an idea of how to implement the Metanome interfaces. 
+* '''file_uploader''': The file uploader is an Python script to upload algorithm JARs and input files or directories containing them to the Metanome backend. It has to be used if the backend is hosted on a remote server were adding file by copying them into the source directory is not possible with automatic deployment. The usage of the file uploader script is described in [File-Uploader]() in more detail. 
 
 == Building a Profiling Algorithms for Metanome ==
 
