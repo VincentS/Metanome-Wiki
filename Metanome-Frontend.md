@@ -19,16 +19,6 @@ For local development you first have to install `node`, `bower` and `gulp`.
 
 To ensure that users, who check out Metanome, have all these dependencies we use the [maven-frontend-plugin](https://github.com/eirslett/frontend-maven-plugin). This will locally install the dependencies when calling `mvn clean install`, so that the user does not have to install anything by himself. 
 
-To start the backend Tomcat Server do the following: **Check for Tomcat**
-
-1. Run `mvn clean install` for packaging the frontend and backend.
-2. Start the Tomcat server with `mvn jetty:run-war` in the frontend package. This will first packages your webapp as a WAR file and then deploys it to Jetty
-
-Each time you make changes to the backend you have to run these steps again.
-To debug the frontend, just call `mvn jetty:run-war` in debug mode via IntelliJ or eclipse.
-
-When you do not need to run any algorithm while testing the frontend, it is sufficient to run `mvn jetty:run`. This is faster than `mvn jetty:run-war`, because the webapp is deployed from its sources to Jetty.
-
 When the backend is running you can start the frontend by executing `gulp serve` in the `src/` directory. This launches a browser sync server on your source files, so you do not have to start the frontend again while making changes to your webapp.
 You can then open the frontend under [http://localhost:8080/](http://localhost:8080/).
 
