@@ -13,6 +13,7 @@
 
 
 **Metanome Frontend Submodule**
+
 The Metanome Frontend repository is included in the Metanome Frontend as an [git submodule](https://git-scm.com/docs/git-submodule)
 into the Metanome project directory ```frontend/src``` and is maintained separately.
 
