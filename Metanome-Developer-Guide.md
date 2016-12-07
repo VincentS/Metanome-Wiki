@@ -11,6 +11,15 @@
 9. Pull request should be reviewed and merged by another person.
 10. Push often, so that other developers can see and review your progress.
 
+
+**Metanome Frontend Submodule**
+The Metanome Frontend repository is included in the Metanome Frontend as an [git submodule](https://git-scm.com/docs/git-submodule)
+into the Metanome project directory ```frontend/src``` and is maintained separately.
+
+If changes are made to the Metanome Frontend the submodule reference has to be updated to the current HEAD of the Metanome Frontend repository using.
+
+*Work in progress*
+
 **Metanome API**
 
 The documentation of the API of Metanome is written in [API Blueprint](https://apiblueprint.org/) and can be found [here](http://docs.metanome.apiary.io/#).
