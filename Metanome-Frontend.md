@@ -23,3 +23,11 @@ When the backend is running you can start the frontend by executing `gulp serve`
 You can then open the frontend under [http://localhost:8080/](http://localhost:8080/).
 
 For building an optimized version of the metanome application you have to execute `gulp` of `gulp build` in `src/main/webapp`. The optimized version can then be found in `/src/main/webapp/metanome`.
+
+
+## Define Backend Variables
+To define e.g. IP for the backend or other variables defined in `src/app/scripts/config.js` are two possibilities how to define them.
+
+### 1. Export variables as system environment variables 
+
+### 2. Use an `.env` file to define the variables
